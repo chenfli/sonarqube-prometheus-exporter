@@ -52,7 +52,7 @@ public class PrometheusWebService implements WebService {
         updateEnabledMetrics();
         updateEnabledGauges();
 
-        NewController controller = context.createController("api/prometheus");
+        NewController controller = context.createController("sonar/api/prometheus");
         controller.setDescription("Prometheus Exporter");
 
         controller.createAction("metrics")
